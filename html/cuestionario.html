@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rusia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-celeste">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Rusia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videos.html">Videos y documentales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="imagenes.html">Imágenes Históricas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cuestionario.html">Cuestionario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3" id="main-content">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" id="question">¿Quién fue el último zar de Rusia?</h5>
+                <form id="quizForm">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="respuesta" id="respuesta1" value="incorrecto">
+                        <label class="form-check-label" for="respuesta1">Nicólas Románov"</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="respuesta" id="respuesta2" value="correcto">
+                        <label class="form-check-label" for="respuesta2">Lenin</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="respuesta" id="respuesta3" value="incorrecto">
+                        <label class="form-check-label" for="respuesta3">Iósif Stalin</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="respuesta" id="respuesta4" value="incorrecto">
+                        <label class="form-check-label" for="respuesta4">Benjamin Franklin</label>
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3" onclick="checkAnswer()">Verificar</button>
+                </form>
+                <div id="result" class="mt-3"></div>
+                <div id="timeBarContainer">
+                    <div id="timeBar"></div>
+                </div>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
